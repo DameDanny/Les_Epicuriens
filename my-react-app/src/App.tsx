@@ -124,7 +124,7 @@ function App() {
   return (
     <>
       <nav>
-        <Navbar regionList={ListeRegion} />
+        <Navbar regionList={ListeRegion} index={index} setIndex={setIndex} />
         <Liste_Vins />
       </nav>
       <div>
