@@ -22,7 +22,7 @@ function App() {
 	return (
 		<>
 			<nav>
-				<Navbar />
+				<Navbar regionList={ListeRegion} />
 				<Liste_Vins />
 			</nav>
 			<div>
