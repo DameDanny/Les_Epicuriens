@@ -10,7 +10,6 @@ interface RegionListe {
 function Regions({ regionData }: RegionListe) {
 	return (
 		<>
-			<p>Hello Region</p>
 			<figure>
 				{regionData.map((article) => (
 					<div key={article.id}>

@@ -119,7 +119,7 @@ const ListeVins = [
 ];
 
 function App() {
-	const [index, setIndex] = useState(null);
+	const [index, setIndex] = useState(-1);
 
 	return (
 		<>
@@ -128,10 +128,10 @@ function App() {
 				<Liste_Vins />
 			</nav>
 			<div>
-				{index === null ? (
+				{index === -1 ? (
 					<Regions regionData={ListeRegion} />
 				) : (
-					<Vins Liste={ListeVins[0]} />
+					<Vins Liste={ListeVins[index]} />
 				)}
 			</div>
 		</>
