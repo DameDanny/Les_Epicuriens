@@ -6,10 +6,14 @@ import Vins from "./components/Vins";
 import Liste_Vins from "./components/Liste_Vins";
 
 const ListeRegion = [
-  { region: "", imageRegion: "", id: 0 },
-  { region: "", imageRegion: "", id: 1 },
-  { region: "", imageRegion: "", id: 2 },
-  { region: "", imageRegion: "", id: 3 },
+  { region: "Bourgogne", imageRegion: "./src/assets/bourgogne.jpg", id: 0 },
+  { region: "Bordeaux", imageRegion: "./src/assets/bordeaux.jpg", id: 1 },
+  { region: "Alsace", imageRegion: "./src/assets/alsace.jpg", id: 2 },
+  {
+    region: "Valée du Rhône",
+    imageRegion: "./src/assets/valee_rhone.jpg",
+    id: 3,
+  },
 ];
 
 const ListeVins = [
@@ -120,11 +124,11 @@ function App() {
   return (
     <>
       <nav>
-        <Navbar />
+        <Navbar regionList={ListeRegion} />
         <Liste_Vins />
       </nav>
       <div>
-        <Regions />
+        <Regions regionData={ListeRegion} />
         <Vins Liste={ListeVins[0]} />
       </div>
     </>
