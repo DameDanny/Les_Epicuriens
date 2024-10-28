@@ -32,7 +32,7 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	background-color: #722f37;
+	background-color: var(--maincolor);
 }
 
 .logo {
