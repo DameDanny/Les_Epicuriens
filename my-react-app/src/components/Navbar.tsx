@@ -1,19 +1,29 @@
-function Navbar() {
-<<<<<<< HEAD
-    return (
+interface listRegionProps {
+    region : string;
+    id : number;
+}
 
-        <>
-            <p>Hello nav</p>
-        </>
-)
-    
-=======
+interface mapRegionProps{
+    index : number;
+    setIndex: (index :number) => void;
+    regionList : listRegionProps[]
+}
+
+function Navbar({regionList, index, setIndex}: mapRegionProps) {
 	return (
-		<>
-			<p>Hello nav</p>
-		</>
-	);
->>>>>>> dbf63f55d35534dd28f7c00033d25f6a74f9e098
+<nav className="nav">
+    <img className="logo" src="./src/assets/logo.png" alt="Gégé Depardieu" />
+{regionList.map((listRegionProps) => (
+<button className="navlist" type="button" key ={listRegionProps.region} onClick={() =>setIndex(listRegionProps.id)}>
+{listRegionProps.region}
+</button>
+
+    ))}
+</nav>
+	)
 }
 
 export default Navbar;
+
+
+
