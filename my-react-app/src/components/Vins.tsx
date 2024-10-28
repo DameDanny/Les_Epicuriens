@@ -1,9 +1,9 @@
 function Vins() {
-    return {
-        <> 
-	        <p>Hello vins</p>;
-        </>
-    }
+	return (
+		<>
+			<p>Hello vins</p>
+		</>
+	);
 }
 
 export default Vins;
