@@ -1,9 +1,11 @@
 function Vins() {
-    return {
+    return (
+        
         <> 
-	        <p>Hello vins</p>;
+	        <p>Hello vins</p>
         </>
+    )
     }
-}
+
 
 export default Vins;

@@ -1,9 +1,11 @@
 function Navbar() {
-    return {
+    return (
+
         <>
             <p>Hello nav</p>
         </>
-    }
+)
+    
 }
 
 export default Navbar;
