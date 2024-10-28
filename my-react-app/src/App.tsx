@@ -6,10 +6,10 @@ import Vins from "./components/Vins";
 import Liste_Vins from "./components/Liste_Vins";
 
 const ListeRegion = [
-	{ region: "Bourgogne", imageRegion: "./regions/bourgogne.jpg", id: 0 },
-	{ region: "Bordeaux", imageRegion: "./regions/bordeaux.jpg", id: 1 },
-	{ region: "Alsace", imageRegion: "./regions/alsace.jpg", id: 2 },
-	{ region: "Valée du Rhône", imageRegion: "./regions/valee_rhone.jpg", id: 3 },
+	{ region: "Bourgogne", imageRegion: "./src/assets/bourgogne.jpg", id: 0 },
+	{ region: "Bordeaux", imageRegion: "./src/assets/bordeaux.jpg", id: 1 },
+	{ region: "Alsace", imageRegion: "./src/assets/alsace.jpg", id: 2 },
+	{ region: "Valée du Rhône", imageRegion: "./src/assets/valee_rhone.jpg", id: 3 },
 ];
 
 const ListeVins = [
