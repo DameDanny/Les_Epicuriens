@@ -6,10 +6,10 @@ import Vins from "./components/Vins";
 import Liste_Vins from "./components/Liste_Vins";
 
 const ListeRegion = [
-	{ region: "", imageRegion: "", id: 0 },
-	{ region: "", imageRegion: "", id: 1 },
-	{ region: "", imageRegion: "", id: 2 },
-	{ region: "", imageRegion: "", id: 3 },
+	{ region: "Bourgogne", imageRegion: "", id: 0 },
+	{ region: "Bordeaux", imageRegion: "", id: 1 },
+	{ region: "Alsace", imageRegion: "", id: 2 },
+	{ region: "Vallée du Rhône", imageRegion: "", id: 3 },
 ];
 
 const ListeVins = [
@@ -25,12 +25,10 @@ function App() {
 				<Navbar />
 				<Liste_Vins />
 			</nav>
-			<div>
-				<Regions />
-				<Vins />
-			</div>
+			<div>{index === null ? <Regions /> : <Vins />}</div>
 		</>
 	);
 }
 
 export default App;
+// {ListeVins[index]}
