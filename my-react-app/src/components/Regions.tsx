@@ -12,11 +12,15 @@ interface RegionListe {
 function Regions({ regionData, index, setIndex }: RegionListe) {
 	return (
 		<>
-			<figure>
+			<figure className="region">
 				{regionData.map((RegionProps) => (
 					<div key={RegionProps.id}>
 						{/* Note à moi même : on place toujours la clé directement après la map */}
-						<button type="button" onClick={() => setIndex(RegionProps.id)}>
+						<button
+							type="button"
+							onClick={() => setIndex(RegionProps.id)}
+							className="region-button"
+						>
 							<img
 								src={RegionProps.imageRegion}
 								alt={RegionProps.imageRegion}

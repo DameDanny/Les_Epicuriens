@@ -1,9 +1,5 @@
 function Liste_Vins() {
-	return (
-		<>
-			<p>Hello</p>
-		</>
-	);
+	return <></>;
 }
 
 export default Liste_Vins;
