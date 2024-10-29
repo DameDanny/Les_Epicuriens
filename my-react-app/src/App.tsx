@@ -131,7 +131,10 @@ function App() {
 				{index === -1 ? (
 					<Regions regionData={ListeRegion} index={index} setIndex={setIndex} />
 				) : (
-					<Vins Liste={ListeVins[index]} />
+					<Vins
+						Liste={ListeVins[index]}
+						nomRegion={ListeRegion[index].region}
+					/>
 				)}
 			</div>
 		</>
