@@ -8,8 +8,7 @@ nav {
 }
 
 #root {
-	margin: 0 auto;
-	padding: 2rem;
+	margin: 0;
 	text-align: center;
 }
 
@@ -33,16 +32,14 @@ nav {
 	justify-content: space-around;
 	align-items: center;
 	background-color: var(--maincolor);
+	padding-top: 15px;
 }
 
 .logo {
 	width: 5vw;
 }
 
-.navList {
-	list-style-type: none;
-}
-button {
+.navlist {
 	border-radius: 8px;
 	border: 1px solid transparent;
 	padding: 0.5em 1em;
@@ -51,4 +48,34 @@ button {
 	font-family: inherit;
 	cursor: pointer;
 	transition: border-color 0.25s;
+}
+
+.button-logo {
+	background-color: var(--maincolor);
+	border: none;
+}
+
+.region-button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	cursor: pointer;
+	transition: border-color 0.25s;
+	margin: 20px;
+}
+
+.region {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.region-button img {
+	width: 100%;
+}
+
+body {
+	margin: 0;
 }

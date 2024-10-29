@@ -155,7 +155,7 @@ function App() {
       </nav>
       <div>
         {index === -1 ? (
-          <Regions regionData={ListeRegion} />
+          <Regions regionData={ListeRegion} index={index} setIndex={setIndex} />
         ) : (
           <Vins Liste={ListeVins[index]} />
         )}
