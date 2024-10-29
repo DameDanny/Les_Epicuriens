@@ -76,6 +76,16 @@ nav {
 	width: 100%;
 }
 
+.vins {
+	border: 5px solid var(--maincolor);
+	border-radius: 15px;
+}
+
+.vins-liste {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
 body {
 	margin: 0;
 }
