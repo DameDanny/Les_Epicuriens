@@ -5,16 +5,24 @@ interface RegionProps {
 }
 interface RegionListe {
 	regionData: RegionProps[];
+	index: number;
+	setIndex: (index: number) => void;
 }
 
-function Regions({ regionData }: RegionListe) {
+function Regions({ regionData, index, setIndex }: RegionListe) {
 	return (
 		<>
 			<figure>
-				{regionData.map((article) => (
-					<div key={article.id}>
-						<img src={article.imageRegion} alt={article.imageRegion} />
-						<h2>{article.region}</h2>
+				{regionData.map((RegionProps) => (
+					<div key={RegionProps.id}>
+						{/* Note à moi même : on place toujours la clé directement après la map */}
+						<button type="button" onClick={() => setIndex(RegionProps.id)}>
+							<img
+								src={RegionProps.imageRegion}
+								alt={RegionProps.imageRegion}
+							/>
+							<h2>{RegionProps.region}</h2>
+						</button>
 					</div>
 				))}
 			</figure>
