@@ -121,11 +121,13 @@ const ListeVins = [
 function App() {
 	const [index, setIndex] = useState(-1);
 
+	
+
 	return (
 		<>
 			<nav>
 				<Navbar regionList={ListeRegion} index={index} setIndex={setIndex} />
-				<Liste_Vins />
+				<Liste_Vins  />
 			</nav>
 			<div>
 				{index === -1 ? (

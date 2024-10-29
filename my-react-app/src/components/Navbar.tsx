@@ -19,7 +19,7 @@ function Navbar({ regionList, index, setIndex }: mapRegionProps) {
 			>
 				<img
 					className="logo"
-					src="./src/assets/logo.png"
+					src="./src/assets/Bacchus.png"
 					alt="Gégé Depardieu"
 				/>
 			</button>
