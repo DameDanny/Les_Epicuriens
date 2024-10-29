@@ -12,7 +12,13 @@ interface mapRegionProps {
 function Navbar({ regionList, index, setIndex }: mapRegionProps) {
 	return (
 		<nav className="nav">
-			<img className="logo" src="./src/assets/logo.png" alt="Gégé Depardieu" />
+			<button type="button" onClick={() => setIndex(-1)}>
+				<img
+					className="logo"
+					src="./src/assets/logo.png"
+					alt="Gégé Depardieu"
+				/>
+			</button>
 			{regionList.map((listRegionProps) => (
 				<button
 					className="navlist"
